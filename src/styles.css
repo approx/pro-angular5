@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+body,html{
+  overflow: hidden;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+app-welcome{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(19, 19, 19, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@keyframes icone {
+  from {transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+}
+
+.imgHud{
+  animation-iteration-count: infinite;
+  animation-name: icone;
+  animation-duration: 2s;
+  /*transform: translate(-50%,-50%) rotate(0deg);*/
+  z-index: 100;
+}
+
+.imgHud:hover{
+  cursor: pointer;
+}
+
+.red{
+  color: #ec3730!important;
+}

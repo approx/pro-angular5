@@ -1,0 +1,52 @@
+
+.title span{
+  color: white;
+  font-size: 54px;
+  transition: all 1s;
+  margin: 0px 2px;
+  display: inline-block;
+}
+
+@keyframes idle {
+  from {transform: scale(1);}
+  to {transform: scale(1.1);}
+}
+
+.start360{
+  color:white;
+  font-size: 26px;
+  opacity: 0;
+  cursor: pointer;
+  animation: idle 0.5s infinite alternate;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+}
+
+#PRO{
+  height: 52px;
+  width: 52px;
+  position: relative;
+  font-size: 0px;
+}
+
+#PRO .imgBG{
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#PRO .mask{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  bottom: 0px;
+}
+
+#PRO .mask img{
+  bottom: 0px;
+}
